@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/ordersystem?characterEncoding=UTF-8&useSSL=false&serverTimezone=Hongkong
+  jpa:
+    show-sql: true
+    open-in-view: false
+  freemarker:
+    suffix: .ftl
+    cache: false
+    request-context-attribute: request
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/static,file:D:/
+  redis:
+    host: localhost
+    port: 6379
+  jackson:
+    default-property-inclusion: non_null
+server:
+  servlet:
+    context-path: /sell
+#  port: 80
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  file: D:/毕设/my.log
