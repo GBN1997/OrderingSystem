@@ -4,11 +4,9 @@ import com.xxx.ordersystem.exception.OrderSystemException;
 import com.xxx.ordersystem.exception.SellerAuthorizeException;
 import com.xxx.ordersystem.utils.ResultVOUtil;
 import com.xxx.ordersystem.viewobject.ResultVO;
-import io.netty.util.internal.ResourcesUtil;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @Author: GuBoNan
