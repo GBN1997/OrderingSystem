@@ -1,7 +1,7 @@
 package com.xxx.ordersystem.service;
 
 import com.xxx.ordersystem.dto.OrderDTO;
-import com.xxx.ordersystem.entity.PayRequest;
+//import com.xxx.ordersystem.entity.PayRequest;
 
 /**
  * @Author: GuBoNan

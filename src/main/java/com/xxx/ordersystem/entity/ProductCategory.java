@@ -28,9 +28,9 @@ public class ProductCategory {
 
     private Integer categoryType;
 
-    private LocalDateTime createTime;
+    private Date createTime;
 
-    private LocalDateTime updateTime;
+    private Date updateTime;
 
     public ProductCategory(String categoryName, int categoryType) {
         this.categoryName = categoryName;

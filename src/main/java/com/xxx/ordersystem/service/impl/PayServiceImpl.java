@@ -3,7 +3,6 @@ package com.xxx.ordersystem.service.impl;
 import com.xxx.ordersystem.converter.OrderMaster2OrderDto;
 import com.xxx.ordersystem.dto.OrderDTO;
 import com.xxx.ordersystem.entity.OrderMaster;
-import com.xxx.ordersystem.entity.PayRequest;
 import com.xxx.ordersystem.enums.OrderStatusEnum;
 import com.xxx.ordersystem.enums.ResultEnum;
 import com.xxx.ordersystem.exception.OrderSystemException;

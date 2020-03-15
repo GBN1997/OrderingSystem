@@ -13,8 +13,6 @@ spring:
     request-context-attribute: request
   mvc:
     static-path-pattern: /**
-  resources:
-    static-locations: classpath:/static,file:D:/
   redis:
     host: localhost
     port: 6379

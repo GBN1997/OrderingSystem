@@ -13,7 +13,7 @@ import java.util.Date;
  * @Author: GuBoNan
  * @Date: 2020/2/17 16:55
  * @Version: 1.0
- * @Description:
+ * @Description:首页图
  */
 @Data
 @Entity

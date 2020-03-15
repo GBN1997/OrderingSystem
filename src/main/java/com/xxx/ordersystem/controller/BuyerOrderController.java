@@ -64,20 +64,7 @@ public class BuyerOrderController {
 
         return ResultVOUtil.success(map);
     }
-    //订单列表
-//    @GetMapping("/list")
-//    public ResultVO<List<OrderDTO>> list(@RequestParam("openid")String openid,
-//                                         @RequestParam(value = "page", defaultValue = "1")Integer page,
-//                                         @RequestParam(value = "size", defaultValue = "11")Integer size){
-//        if(StringUtils.isEmpty(openid)){
-//            log.error("【订单列表】 openID为空");
-//            throw new OrderSystemException(ResultEnum.OPENID_NOT_EXIST);
-//        }
-//        PageRequest pageRequest = PageRequest.of(page, size);
-//        Page<OrderDTO> orderDTOPage = orderMasterService.findByBuyerOpenid(openid, pageRequest);
-//        return ResultVOUtil.success(orderDTOPage.getContent());
-//    }
-
+    //根据订单状态查询列表
     @GetMapping("/listByStatus")
     public ResultVO<List<OrderDTO>> listByStatus(@RequestParam("openid") String openid,
                                                  @RequestParam(value = "orderStatus", defaultValue = "0") Integer orderStatus) {

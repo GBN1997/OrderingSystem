@@ -11,7 +11,7 @@ import java.util.Date;
  * @Author: GuBoNan
  * @Date: 2020/2/6 12:35
  * @Version: 1.0
- * @Description:
+ * @Description:去掉时间戳后面的0
  */
 public class Date2LongSerializer extends JsonSerializer<Date> {
     @Override

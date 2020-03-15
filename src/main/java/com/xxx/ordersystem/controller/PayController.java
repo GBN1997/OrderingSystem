@@ -2,7 +2,6 @@ package com.xxx.ordersystem.controller;
 
 import com.xxx.ordersystem.dto.OrderDTO;
 import com.xxx.ordersystem.entity.OrderMaster;
-import com.xxx.ordersystem.entity.PayRequest;
 import com.xxx.ordersystem.enums.OrderStatusEnum;
 import com.xxx.ordersystem.enums.ResultEnum;
 import com.xxx.ordersystem.exception.OrderSystemException;
