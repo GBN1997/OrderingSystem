@@ -7,13 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-import javax.transaction.Transactional;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 class ProductCategoryServiceImplTest {
 
     @Autowired
@@ -40,6 +41,6 @@ class ProductCategoryServiceImplTest {
     @Test
     @Transactional
     void save() {
-        service.save(new ProductCategory("xxx",4));
+        service.save(new ProductCategory("xxx",10));
     }
 }

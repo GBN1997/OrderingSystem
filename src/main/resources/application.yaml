@@ -25,4 +25,4 @@ server:
 #logging:
 #  pattern:
 #    console: "%d - %msg%n"
-#  file: D:/毕设/my.log
+#  file: D:/

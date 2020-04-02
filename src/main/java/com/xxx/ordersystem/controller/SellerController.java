@@ -70,7 +70,7 @@ public class SellerController {
     public ModelAndView logout(HttpServletRequest request,
                                HttpServletResponse response,
                                Map<String, Object> map) {
-        //1. 从cookie里查询
+        //从cookie里查询
         Cookie cookie = CookieUtil.get(request, CookieConstant.TOKEN);
         if (cookie != null) {
             //清除redis

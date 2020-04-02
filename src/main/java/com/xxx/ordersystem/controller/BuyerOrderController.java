@@ -44,7 +44,7 @@ public class BuyerOrderController {
     PayService payService;
     //创建订单
     @PostMapping("/create")
-    public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
+    public synchronized ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
                                                 BindingResult bindingResult){
         if(bindingResult.hasErrors()){
            log.error("【创建订单】 参数不正确 ,orderform=[]",orderForm);
